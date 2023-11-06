@@ -1,7 +1,7 @@
-Email NotificationS
+# Email Notification
 This Python script connects to a SQL Server database, retrieves data using three different SQL queries, and sends an email notification if there are potential errors in online sales data. The script is designed to be run periodically to keep track of the Different topics on sales data.
 
-Table of Contents
+##Table of Contents
 Prerequisites
 Usage
 Configuration
@@ -10,13 +10,14 @@ File Attachment
 Prerequisites
 Before using this script, make sure you have the following dependencies installed:
 
-Python
-Pandas
-pyodbc
-smtplib (for sending email)
-An SMTP server (e.g., Gmail) for sending email notifications
-Usage
-Clone this repository to your local machine:
+-Python
+-Pandas
+-pyodbc
+-smtplib (for sending email)
+-An SMTP server (e.g., Gmail) for sending email notifications
+
+##Usage
+1.Clone this repository to your local machine:
 
 bash
 Copy code
