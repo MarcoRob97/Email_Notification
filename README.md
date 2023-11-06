@@ -43,6 +43,26 @@ Before running the script, you need to configure it by setting various parameter
 ## Email Notification
 The script uses the smtplib library to send email notifications. It sends an email with a subject indicating potential errors in online sales data. The sender's name and recipient's email address can be customized in the script.
 
+# LAST BUT NOT LEAST IMPORTANT, SET UP YOUR GMAIL ACCOUNT TO SEND THE EMAILS 
+
+Here's a detailed guide:
+
+## Create a Gmail Account:
+If you don't already have a Gmail account, you'll need to create one. Go to Gmail and click on "Create account." Follow the instructions to set up your Gmail account, including choosing a username and password.
+
+## Enable Less Secure Apps:
+To send emails via SMTP (Simple Mail Transfer Protocol), you need to enable "Less Secure Apps" in your Gmail account settings. Keep in mind that Google considers this option less secure because it allows apps with your credentials to access your account.
+
+## Go to Google Account settings.
+Click on "Security" in the left sidebar.
+Under "Less secure app access," click "Turn on access."
+Generate an App Password (Recommended):
+Instead of using your main Gmail password, it's more secure to generate an "App Password" for use with Python. This password is specific to the application (in this case, your Python script).
+
+Under the "Signing in to Google" section in your Google Account settings, go to "App passwords."
+Select "Mail" and "Other (Custom name)," and then give it a name like "Python Email Sender."
+Click "Generate." You will receive a 16-character password; save this, as you won't be able to see it again.
+
 
 
 
