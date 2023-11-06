@@ -1,7 +1,7 @@
 # Email Notification
 This Python script connects to a SQL Server database, retrieves data using three different SQL queries, and sends an email notification if there are potential errors in online sales data. The script is designed to be run periodically to keep track of the Different topics on sales data.
 
-##Table of Contents
+## Table of Contents
 Prerequisites
 Usage
 Configuration
@@ -16,7 +16,7 @@ Before using this script, make sure you have the following dependencies installe
 -smtplib (for sending email)
 -An SMTP server (e.g., Gmail) for sending email notifications
 
-##Usage
+## Usage
 1.Clone this repository to your local machine:
 
 bash
@@ -42,7 +42,7 @@ Execute three SQL queries to retrieve data from your desired tables.
 In my case i need it to notify in my company abouth specific anomalies, so if the requests of the views 
 came with any result it will create and excel file, for your case this is optional.
 
-Configuration
+## Configuration
 Before running the script, you need to configure it by setting various parameters:
 
 SQL Server Database Connection:
@@ -62,7 +62,6 @@ filename: Set the name of the output Excel file.
 Email Notification
 The script uses the smtplib library to send email notifications. It sends an email with a subject indicating potential errors in online sales data. The sender's name and recipient's email address can be customized in the script.
 
-File Attachment
-If the script detects potential errors (i.e., there are rows in the DataFrames), it will create an Excel file containing the data and attach it to the email. The file name is printed to the console.
 
-You can replace "yourusername" and "your-repo" with your GitHub username and repository name. Make sure to include any additional information or customization specific to your use case in the README.
+
+
